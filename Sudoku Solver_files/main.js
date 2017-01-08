@@ -2,7 +2,8 @@ var elem;
 $(document).ready(function(){
 	$(document.body).on('click', '.clickable', function(){
 		var id = $(this).attr('id');
-		elem = document.getElementById(id);	
+		elem = document.getElementById(id);
+        elem.style.backgroundColor = "lightblue";		
 	});
 	
 	$(document.body).on('click', '#submit-button', function(){
@@ -13,7 +14,8 @@ $(document).ready(function(){
 
 $(document).keypress(function(e) {
 	var x = e.which-48;
-	elem.innerHTML= ""+x;	
+	elem.innerHTML= ""+x;
+	elem.style.backgroundColor = "white";
 });
 
 
