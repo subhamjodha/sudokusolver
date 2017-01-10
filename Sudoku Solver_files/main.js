@@ -3,6 +3,13 @@ $(document).ready(function(){
 	$(document.body).on('click', '.clickable', function(){
 		var id = $(this).attr('id');
 		elem = document.getElementById(id);
+		
+		for(var i=0;i<9;i++){
+		for(var j=0;j<9;j++){
+			var z = "cell-" + i + j;
+		    document.getElementById(z).style.backgroundColor = "white";
+		    }
+        }  		
         elem.style.backgroundColor = "lightblue";		
 	});
 	
